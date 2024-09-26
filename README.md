@@ -1,30 +1,31 @@
-# React + TypeScript + Vite
+<h1 align="center">Boatly</h1>
+<h5 align="center">🌐 Link to website: https://boatlyrental.vercel.app/ </h5>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+<img width="60%" src="https://github.com/user-attachments/assets/3ddf7a07-877a-4fb7-97df-0cb3b46ff2e4"/>
+ </div>
 
-Currently, two official plugins are available:
+## About
+This project is a front-end template for a boat booking website built with React Vite, TypeScript and Tailwind CSS. It allows users to book a boat for a specific date and time. The template features a modern and responsive design that makes it easy to view tours and book. Perfect for developers who want to integrate backend functionality or customize it for a boat tour business.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Languages used
+* Typescript + Tailwind CSS
 
-## Expanding the ESLint configuration
+## Libraries used
+* react-icon
+* react-router-dom
+* react-fast-marquee
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## How to run
+* Clone the repo
+```bash
+git clone
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+* Install dependencies
+```bash
+npm i
+```
+* Run the application
+```bash
+npm run dev
+```
