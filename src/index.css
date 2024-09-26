@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    user-select: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    width: 100%;
+}
+
+@layer base {
+    html {
+        font-family: "Poppins", sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    :root {
+      --color-primary: 0, 158, 178;
+      --color-primary-dark: 0, 83, 106;
+      --color-white: 255, 255, 255;
+      --color-black: 0, 0, 0;
+      --color-warning: 220, 38, 38;
+      --color-description: 75, 85, 99;
+      --color-not-select: 156, 163, 175;
+      --color-social: 147, 197, 253;
+      --color-footerBg: 29, 29, 29;
+      --color-freq-hover: 219, 234, 254;
+      --color-swiper-hover: 0 0 0 / 0.3;
+      --color-select-hover: 243, 244, 246;
+      --color-decline-message: 248, 113, 113;
+    }
+  }
+
+
+@layer utilities {
+    .transition-custom {
+        transition: all .5s .1s cubic-bezier(.55, 0, .1, 1);
+    }
+
+    .radius {
+        border-radius: 50%
+    }
+}
+
+@layer components {
+    .button {
+        @apply fixed right-0 m-20 w-12 h-12 rounded-full flex items-center justify-center cursor-pointer z-10;
+    }
+
+    .burger {
+        @apply w-full
+    }
+
+    .burger::after, .burger::before {
+        @apply block relative content-[''] w-[40%] h-[1px] bg-base-white m-auto transition-transform	
+    }
+
+    .burger::after {
+        @apply -top-[5px]
+    }
+
+    .burger::before {
+        @apply top-[5px]
+    }
+
+    .burgerActive::after {
+        @apply -top-px rotate-45
+    }
+
+    .burgerActive::before {
+        @apply top-0 -rotate-45
+    }
+
+    .footer_col > h2 {
+        @apply relative
+    }
+
+    .footer_col > h2::before {
+        @apply content-[''] absolute left-0 -bottom-2.5 bg-base-primary h-0.5 w-full box-border 
+    }
+}

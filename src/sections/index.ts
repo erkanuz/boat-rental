@@ -1,0 +1,7 @@
+export * from './Hero/index'
+export * from './Services/index'
+export * from './About/index'
+export * from './Gallery/index'
+export * from  './Contact/index'
+export * from './Contact/index'
+export * from './Footer/index'
