@@ -57,7 +57,9 @@ export const Navbar: React.FC<NavbarProps> = ({ navLinks }) => {
               <Link
                 to={icon.link}
                 key={id}
-                className='flex items-center bg-base-white hover:bg-base-social border p-2 mx-3 w-10 h-10 transform transition-all duration-700 rounded-full'
+                className={`flex items-center border p-2 mx-3 w-10 h-10 transform transition-all duration-700 rounded-full ${
+                  hovered === id ? 'bg-base-social' : 'bg-base-white'
+                }`}
                 onMouseEnter={() => setHovered(id)}
                 onMouseLeave={() => setHovered(null)}
               >
